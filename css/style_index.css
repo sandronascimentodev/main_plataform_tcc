@@ -32,7 +32,7 @@ nav {
 
     margin: 60px 800px auto;
     color: #fff;
- 
+
     justify-content: center;
 }
 
@@ -48,7 +48,7 @@ nav {
 }
 
 .sidebar {
-    height: 335px;
+    height: 117px;
     width: 60px;
     background: #fff;
     border-radius: 5px;
@@ -57,4 +57,58 @@ nav {
     right: 50px;
     transform: translate(-50%);
 
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px auto;
+}
+
+.side-text {
+    min-width: 0px;
+    height: 100%;
+    background: #1c78f1;
+    margin-right: 5px;
+    line-height: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 0 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.icon {
+    min-width: 50px;
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.icon .fa {
+    font-size: 20px;
+    color: #f1721c;
+    line-height: 50px;
+
+}
+
+.icon-box:hover .icon {
+    background: #f1721c;
+}
+
+.icon-box:hover .icon .fa {
+    color: #fff;
+}
+
+.icon-box:hover .side-text {
+    min-width: 140px;
 }
