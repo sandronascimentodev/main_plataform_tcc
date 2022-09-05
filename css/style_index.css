@@ -15,11 +15,13 @@ body {
 
 nav {
     width: 85%;
-    margin: auto;
+    /* margin: auto; */
     padding-top: 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* margin-right: 40px; */
+    margin-left: 25px;
 }
 
 .logo {
@@ -32,19 +34,24 @@ nav {
 
     margin: 60px 800px auto;
     color: #fff;
-
     justify-content: center;
+    align-items: center;
 }
 
 .title-box h1 {
+    width: 100%;
+    margin-left: 40px;
     margin-bottom: 30px;
     font-size: 60px;
 }
 
 .title-box p {
+    width: 100%;
     font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 40px;
+    line-height: 24px; 
+    margin-bottom: 20px;
+    margin-left: 190px;
+    justify-content: center;
 }
 
 .sidebar {
@@ -111,4 +118,36 @@ nav {
 
 .icon-box:hover .side-text {
     min-width: 140px;
+}
+
+/* charts */
+.graphBox{
+    position: relative;
+    width: 70%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 30px;
+    min-height: 200px;
+    margin-left: 380px;
+    
+}
+.graphBox .box{
+    background: #fff;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 7px 25 rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+
+}
+
+@media (max-width:991px){
+    .graphBox{
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .sidebar{
+        height: auto;
+        width: 60px;
+    }
 }
